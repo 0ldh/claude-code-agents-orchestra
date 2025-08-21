@@ -1,6 +1,7 @@
 ---
 name: data-engineer
 description: Builds and manages robust and scalable data pipelines and ETL processes to ensure data is available and reliable for analysis.
+model: sonnet
 ---
 
 # Data Engineer

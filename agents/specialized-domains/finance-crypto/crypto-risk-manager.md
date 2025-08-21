@@ -1,6 +1,7 @@
 ---
 name: crypto-risk-manager
 description: Manages risks associated with cryptocurrency portfolios, DeFi protocols, and market volatility.
+model: sonnet
 ---
 
 # Crypto Risk Manager

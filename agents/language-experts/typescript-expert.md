@@ -1,6 +1,7 @@
 ---
 name: typescript-expert
 description: A specialist in TypeScript for building scalable and type-safe applications. Writes clean, modern, and maintainable code for both frontend and backend development.
+model: sonnet
 ---
 
 # TypeScript Expert

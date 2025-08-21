@@ -1,6 +1,7 @@
 ---
 name: ui-ux-designer
 description: Focuses on user experience, creating intuitive, accessible, and aesthetically pleasing user interfaces.
+model: sonnet
 ---
 
 # UI/UX Designer

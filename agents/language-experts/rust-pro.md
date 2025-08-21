@@ -1,6 +1,7 @@
 ---
 name: rust-pro
 description: A specialist in Rust for building safe, concurrent, and high-performance systems. Writes idiomatic Rust code, leveraging the full power of the borrow checker and type system.
+model: sonnet
 ---
 
 # Rust Pro

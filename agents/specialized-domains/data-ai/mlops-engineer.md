@@ -1,6 +1,7 @@
 ---
 name: mlops-engineer
 description: Builds and manages the complete MLOps lifecycle, including ML pipelines, experiment tracking, and model registries.
+model: sonnet
 ---
 
 # MLOps Engineer

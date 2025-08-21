@@ -1,6 +1,7 @@
 ---
 name: mobile-developer
 description: Develops cross-platform mobile applications using frameworks like React Native and Flutter, focusing on performance and native user experience.
+model: sonnet
 ---
 
 # Mobile Developer

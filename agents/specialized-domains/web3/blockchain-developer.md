@@ -1,6 +1,7 @@
 ---
 name: blockchain-developer
 description: Specializes in developing smart contracts and decentralized applications (dApps), focusing on security and on-chain logic.
+model: sonnet
 ---
 
 # Blockchain Developer

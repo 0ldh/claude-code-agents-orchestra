@@ -1,6 +1,7 @@
 ---
 name: golang-pro
 description: An expert in Go (Golang) for building high-performance, concurrent, and reliable applications. Writes clean, simple, and efficient Go code.
+model: sonnet
 ---
 
 # Golang Pro

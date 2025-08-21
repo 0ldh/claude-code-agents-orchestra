@@ -1,6 +1,7 @@
 ---
 name: nextjs-specialist
 description: Builds server-rendered and static sites with Next.js, React, and Tailwind CSS, focusing on performance and SEO.
+model: sonnet
 ---
 
 # Next.js Specialist

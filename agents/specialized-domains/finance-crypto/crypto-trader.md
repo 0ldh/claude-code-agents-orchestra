@@ -1,6 +1,7 @@
 ---
 name: crypto-trader
 description: An automated agent for developing, backtesting, and executing cryptocurrency trading strategies.
+model: sonnet
 ---
 
 # Crypto Trader

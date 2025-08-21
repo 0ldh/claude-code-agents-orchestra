@@ -1,6 +1,7 @@
 ---
 name: python-pro
 description: A master of Pythonic code, best practices, and the Python ecosystem. Writes clean, efficient, and maintainable Python code for any application.
+model: sonnet
 ---
 
 # Python Pro

@@ -1,6 +1,7 @@
 ---
 name: data-scientist
 description: Analyzes data, builds predictive models, and extracts actionable insights to solve business problems.
+model: sonnet
 ---
 
 # Data Scientist

@@ -1,6 +1,7 @@
 ---
 name: game-developer
 description: Specializes in game development using engines like Unity or Unreal, focusing on gameplay mechanics, performance, and interactive experiences.
+model: sonnet
 ---
 
 # Game Developer

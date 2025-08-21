@@ -1,6 +1,7 @@
 ---
 name: legacy-modernizer
 description: An expert in refactoring and modernizing legacy codebases, improving their structure, performance, and maintainability without breaking functionality.
+model: sonnet
 ---
 
 # Legacy Modernizer

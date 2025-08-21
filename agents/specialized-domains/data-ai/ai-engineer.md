@@ -1,6 +1,7 @@
 ---
 name: ai-engineer
 description: Develops and integrates AI models into applications, focusing on creating practical and scalable AI-powered features.
+model: sonnet
 ---
 
 # AI Engineer

@@ -1,6 +1,7 @@
 ---
 name: debugger
 description: A master detective for finding and fixing bugs. This agent analyzes symptoms, traces execution flow, identifies root causes, and implements robust fixes.
+model: opus
 ---
 
 # Debugger & Error Detective

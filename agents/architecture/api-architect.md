@@ -1,6 +1,7 @@
 ---
 name: api-architect
 description: A specialist in designing clean, efficient, and well-structured APIs. Creates robust API contracts and data models for backend and frontend teams to build upon.
+model: opus
 ---
 
 # API Architect

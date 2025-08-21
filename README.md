@@ -1,42 +1,146 @@
-# 🚀 Claude Code Orchestra: Transform Claude Code into an Elite Development Squad
+# 🚀 Claude Code Orchestra: Your Elite AI Development Squad
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Agents](https://img.shields.io/badge/Agents-40+-blue)](./agents)
+[![Agents](https://img.shields.io/badge/Agents-47-blue)](./agents)
 [![Teams](https://img.shields.io/badge/Teams-10-green)](./agents)
 
 > **Build faster. Ship better. Code smarter.**  
-> Turn Claude Code into a coordinated team of 55+ specialized AI agents that work together like a world-class engineering organization.
+> This project provides a collection of 47 specialized AI agents, turning a capable generalist like Claude into a world-class engineering organization. Stop trying to teach one AI everything and instead leverage a team of pre-built experts.
 
-## 🎯 The Problem: One AI Can't Master Everything
+## 🎯 The Core Idea: A Team of Specialists, Not One Generalist
 
-While Claude Code is incredibly powerful, complex projects demand specialized expertise:
+While a single large language model is powerful, complex projects demand deep, nuanced expertise. This repository gives you that specialized team out-of-the-box.
 
-- **Backend architects** who understand microservices and API design
-- **Security experts** who catch vulnerabilities before production
-- **Performance engineers** who optimize every millisecond
-- **Framework specialists** who know Django, Rails, React, and Vue inside out
+- **Backend architects** who deeply understand microservices.
+- **Security experts** who find vulnerabilities you didn't know you had.
+- **Performance engineers** who optimize every millisecond.
+- **Framework specialists** who are masters of Django, Rails, React, and Vue.
 
-**The Solution:** This framework transforms Claude Code into a complete development team, with each agent bringing deep, specialized knowledge to your project.
+This collection of agents is the primary focus. You can use them with your own orchestration logic or use our provided example to get started quickly.
 
-## 💡 See the Difference
+---
 
-```
-You: "Build a real-time analytics dashboard"
+## 👥 Your AI Development Team
 
-❌ Without Agent Team:
-Claude: *Creates a basic dashboard with generic patterns*
+This repository contains **47 Specialized Agents** organized into 10 professional teams. Explore the teams below to see the capabilities at your disposal.
 
-✅ With Agent Team:
-├── 🧭 Tech Lead: "Breaking this into specialized tasks for optimal results"
-├── 🔍 Code Archaeologist: "Analyzed your codebase - found existing auth system and API patterns"
-├── 🏗️ API Architect: "Designing WebSocket endpoints for real-time data streaming"
-├── ⚡ Performance Engineer: "Implementing data aggregation and caching strategy"
-├── 🎨 React Expert: "Building responsive components with Chart.js and real-time updates"
-├── 🛡️ Security Auditor: "Adding rate limiting and authentication to WebSocket connections"
-└── ✅ Test Automator: "Created comprehensive test suite with 95% coverage"
+#### Team Directory
 
-Result: Production-ready dashboard with sub-second updates, optimized queries, and enterprise security
-```
+- [🧭 Orchestration Team](#-orchestration-team)
+- [🏗️ Architecture Team](#️-architecture-team)
+- [💻 Development Team](#-development-team)
+- [🛡️ Quality Assurance Team](#️-quality-assurance-team)
+- [🚀 DevOps & Infrastructure Team](#-devops--infrastructure-team)
+- [✍️ Language Experts Team](#️-language-experts-team)
+- [🎨 Design Team](#-design-team)
+- [📝 Content & Documentation Team](#-content--documentation-team)
+- [🔬 Specialized Domains Team](#-specialized-domains-team)
+- [🛠️ Specialized Tools Team](#️-specialized-tools-team)
+
+---
+
+### 🧭 Orchestration Team
+
+**Your project managers and workflow coordinators.**
+
+- **[tech-lead-orchestrator](./agents/orchestration/tech-lead-orchestrator.md)**: Designs mission blueprints and defines the execution sequence for complex tasks.
+- **[context-manager](./agents/orchestration/context-manager.md)**: Maintains context across multiple agents and long tasks.
+- **[code-archaeologist](./agents/orchestration/code-archaeologist.md)**: Explores and understands any codebase.
+
+### 🏗️ Architecture Team
+
+**System designers who build solid foundations.**
+
+- **[api-architect](./agents/architecture/api-architect.md)**: RESTful API design and best practices.
+- **[backend-architect](./agents/architecture/backend-architect.md)**: Microservices, scalability, and system design.
+- **[cloud-architect](./agents/architecture/cloud-architect.md)**: AWS/GCP/Azure infrastructure and optimization.
+- **[database-optimizer](./agents/architecture/database-optimizer.md)**: Query performance and schema design.
+- **[graphql-architect](./agents/architecture/graphql-architect.md)**: GraphQL schemas, resolvers, and federation.
+
+### 💻 Development Team
+
+**Core builders with framework expertise.**
+
+- **Backend Specialists**
+  - Django: **[django-expert](./agents/development/backend/django/django-expert.md)**
+  - Laravel: **[laravel-expert](./agents/development/backend/laravel/laravel-expert.md)**
+  - Rails: **[rails-expert](./agents/development/backend/rails/rails-expert.md)**
+- **Frontend Specialists**
+  - React: **[react-expert](./agents/development/frontend/react/react-expert.md)**, **[nextjs-specialist](./agents/development/frontend/react/nextjs-specialist.md)**
+  - Vue: **[vue-expert](./agents/development/frontend/vue/vue-expert.md)**, **[vue-nuxt-expert](./agents/development/frontend/vue/vue-nuxt-expert.md)**
+- **Mobile**
+  - **[mobile-developer](./agents/development/mobile/mobile-developer.md)**: React Native & Flutter.
+
+### 🛡️ Quality Assurance Team
+
+**Guardians of code quality and security.**
+
+- **[security-auditor](./agents/quality-assurance/security-auditor.md)**: OWASP compliance and vulnerability scanning.
+- **[test-automator](./agents/quality-assurance/test-automator.md)**: Comprehensive test suites (unit/integration/e2e).
+- **[code-reviewer](./agents/quality-assurance/code-reviewer.md)**: Best practices and maintainability.
+- **[debugger](./agents/quality-assurance/debugger.md)**: Complex bug investigation.
+- **[accessibility-specialist](./agents/quality-assurance/accessibility-specialist.md)**: WCAG compliance and a11y.
+
+### 🚀 DevOps & Infrastructure Team
+
+**Deployment and operations experts.**
+
+- **[devops-engineer](./agents/devops-infra/devops-engineer.md)**: CI/CD, containers, and cloud deployment.
+- **[database-admin](./agents/devops-infra/database-admin.md)**: Backups, replication, and monitoring.
+
+### ✍️ Language Experts Team
+
+**Deep language-specific mastery.**
+
+- **[python-pro](./agents/language-experts/python-pro.md)**: Pythonic patterns and optimization.
+- **[golang-pro](./agents/language-experts/golang-pro.md)**: Concurrent Go and performance.
+- **[rust-pro](./agents/language-experts/rust-pro.md)**: Memory safety and systems programming.
+- **[typescript-expert](./agents/language-experts/typescript-expert.md)**: Type-safe architecture.
+
+### 🎨 Design Team
+
+**User experience and interface experts.**
+
+- **[ui-ux-designer](./agents/design/ui-ux-designer.md)**: User-centered design and workflows.
+- **[tailwind-css-expert](./agents/design/tailwind-css-expert.md)**: Responsive, beautiful UIs.
+
+### 📝 Content & Documentation Team
+
+**Clear communication and documentation.**
+
+- **[documentation-specialist](./agents/content-docs/documentation-specialist.md)**: API docs, guides, and tutorials.
+
+### 🔬 Specialized Domains Team
+
+**Industry and domain experts.**
+
+- **Data & AI**:
+  - **[data-scientist](./agents/specialized-domains/data-ai/data-scientist.md)**
+  - **[data-engineer](./agents/specialized-domains/data-ai/data-engineer.md)**
+  - **[ai-engineer](./agents/specialized-domains/data-ai/ai-engineer.md)**
+  - **[ml-engineer](./agents/specialized-domains/data-ai/ml-engineer.md)**
+  - **[mlops-engineer](./agents/specialized-domains/data-ai/mlops-engineer.md)**
+- **Finance & Crypto**:
+  - **[crypto-trader](./agents/specialized-domains/finance-crypto/crypto-trader.md)**
+  - **[crypto-analyst](./agents/specialized-domains/finance-crypto/crypto-analyst.md)**
+  - **[crypto-risk-manager](./agents/specialized-domains/finance-crypto/crypto-risk-manager.md)**
+  - **[defi-strategist](./agents/specialized-domains/finance-crypto/defi-strategist.md)**
+  - **[arbitrage-bot](./agents/specialized-domains/finance-crypto/arbitrage-bot.md)**
+  - **[quant-analyst](./agents/specialized-domains/finance-crypto/quant-analyst.md)**
+- **Web3**:
+  - **[blockchain-developer](./agents/specialized-domains/web3/blockchain-developer.md)**
+
+### 🛠️ Specialized Tools Team
+
+**Platform and tool specialists.**
+
+- **[payment-integration](./agents/specialized-tools/payment-integration.md)**: Stripe, PayPal, etc.
+- **[legacy-modernizer](./agents/specialized-tools/legacy-modernizer.md)**: Refactoring and modernization.
+- **[game-developer](./agents/specialized-tools/game-developer.md)**: Unity, Unreal, etc.
+- **[directus-developer](./agents/specialized-tools/cms/directus-developer.md)**: Headless CMS expertise.
+- **[drupal-developer](./agents/specialized-tools/cms/drupal-developer.md)**: Drupal modules and theming.
+
+---
 
 ## 🚀 Quick Start
 
@@ -47,18 +151,38 @@ git clone https://github.com/0ldh/claude-code-agents-orchestra.git
 cd claude-code-agents-orchestra
 ```
 
-### 2. Start Building with Your Team
+### 2. Use Agents Directly (The Simple Way)
+
+You can invoke any agent directly to leverage their specialized skills for focused tasks. This is the simplest way to use the agent collection without any setup.
 
 ```bash
-claude "@agent-tech-lead-orchestrator Build a complete e-commerce checkout system with payment processing"
+# Ask the TypeScript expert to refactor a function for better type safety
+claude "@typescript-expert Please refactor this function to be more type-safe: [paste your code here]"
+
+# Get the security auditor to review a specific file
+claude "@security-auditor Review this file for potential security vulnerabilities: src/auth/session.js"
 ```
 
-The framework will automatically:
+### 3. Explore Your Agent Team
 
-- Analyze your request complexity
-- Engage the right specialists
-- Coordinate their work
-- Deliver production-ready code
+Familiarize yourself with the agents listed above. Click on any agent to see their detailed prompt and capabilities.
+
+### 4. (Optional) Use the Example Orchestration Framework
+
+This repository includes an advanced orchestration framework in `CLAUDE.md.example`. See the [Orchestration Example section](#-orchestration-example-using-claudemdexample) for details on how to use it.
+
+---
+
+## 🤔 Two Ways to Use This Agent Team: Direct Calls vs. Orchestration Framework
+
+You can use this agent collection in two ways. Choose the approach that best fits your task.
+
+| Aspect               | **Direct Agent Calls**                                                                                 | **Orchestration Framework Usage**                                                                                                     |
+| :------------------- | :----------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| **When to Use**      | For simple, focused, single-step tasks. (e.g., refactoring a function, reviewing a file for security). | For complex, multi-step missions requiring collaboration between multiple agents. (e.g., building a new feature, migrating a system). |
+| **Who Orchestrates** | **You** are the orchestrator. You manually select and call the appropriate agent.                      | **Claude** becomes the orchestrator, guided by the rules in `CLAUDE.md.example`. It automatically plans and delegates tasks.          |
+| **Pros**             | No setup required. Fast and direct for simple jobs.                                                    | Automates complex planning and coordination, significantly reducing your workload.                                                    |
+| **Cons**             | You are responsible for managing all steps and context for complex tasks.                              | Requires a one-time setup of copying `CLAUDE.md.example` to `~/.claude/CLAUDE.md`.                                                    |
 
 ---
 
@@ -82,265 +206,135 @@ All agents are organized into professional teams within the `agents/` directory.
 │   └── 🛠️ specialized-tools/    # Specific Platform & Tool Mastery
 │
 ├── CLAUDE.md.example         # Advanced: Example AI Rule Book
-├── CONTRIBUTING.md
 ├── LICENSE
 └── README.md
 ```
 
 ---
 
-## 👥 Your AI Development Team
+## 👑 Orchestration Example: Using `CLAUDE.md.example`
 
-**55+ Specialized Agents** organized into 10 professional teams, each mastering their domain:
+> **⚠️ Important:** The following sections and the `CLAUDE.md.example` file demonstrate **one possible way** to orchestrate this team of specialist agents. This is a powerful but optional framework. You are encouraged to adapt it, build your own, or integrate these agents into your existing workflow.
 
-### 🧭 Orchestration Team
+The provided framework turns Claude into a project manager that can automatically triage tasks, delegate to the correct specialists, and manage complex workflows, all while waiting for your approval.
 
-**Your project managers and workflow coordinators**
-
-- `tech-lead-orchestrator` - Plans complex missions and coordinates specialist teams
-- `context-manager` - Maintains context across multiple agents and long tasks
-- `code-archaeologist` - Explores and understands any codebase
-
-### 🏗️ Architecture Team
-
-**System designers who build solid foundations**
-
-- `api-architect` - RESTful API design and best practices
-- `backend-architect` - Microservices, scalability, and system design
-- `cloud-architect` - AWS/GCP/Azure infrastructure and optimization
-- `database-optimizer` - Query performance and schema design
-- `graphql-architect` - GraphQL schemas, resolvers, and federation
-
-### 💻 Development Team
-
-**Core builders with framework expertise**
-
-**Backend Specialists**
-
-- Django Team: `django-expert` (full-stack)
-- Laravel Team: `laravel-expert` (PHP mastery)
-- Rails Team: `rails-expert` (Ruby expertise)
-
-**Frontend Specialists**
-
-- React Team: `react-expert`, `nextjs-specialist`
-- Vue Team: `vue-expert`, `vue-nuxt-expert`
-
-**Mobile**
-
-- `mobile-developer` - React Native & Flutter
-
-### 🛡️ Quality Assurance Team
-
-**Guardians of code quality and security**
-
-- `security-auditor` - OWASP compliance and vulnerability scanning
-- `test-automator` - Comprehensive test suites (unit/integration/e2e)
-- `code-reviewer` - Best practices and maintainability
-- `debugger` - Complex bug investigation
-- `accessibility-specialist` - WCAG compliance and a11y
-
-### 🚀 DevOps & Infrastructure Team
-
-**Deployment and operations experts**
-
-- `devops-engineer` - CI/CD, containers, and cloud deployment
-- `database-admin` - Backups, replication, and monitoring
-
-### ✍️ Language Experts Team
-
-**Deep language-specific mastery**
-
-- `python-pro` - Pythonic patterns and optimization
-- `golang-pro` - Concurrent Go and performance
-- `rust-pro` - Memory safety and systems programming
-- `typescript-expert` - Type-safe architecture
-
-### 🎨 Design Team
-
-**User experience and interface experts**
-
-- `ui-ux-designer` - User-centered design and workflows
-- `tailwind-css-expert` - Responsive, beautiful UIs
-
-### 📝 Content & Documentation Team
-
-**Clear communication and documentation**
-
-- `documentation-specialist` - API docs, guides, and tutorials
-
-### 🔬 Specialized Domains Team
-
-**Industry and domain experts**
-
-**Data & AI**
-
-- `data-scientist`, `data-engineer`, `ai-engineer`
-- `ml-engineer`, `mlops-engineer`
-
-**Finance & Crypto**
-
-- `crypto-trader`, `crypto-analyst`, `crypto-risk-manager`
-- `defi-strategist`, `arbitrage-bot`, `quant-analyst`
-
-**Web3**
-
-- `blockchain-developer` - Smart contracts and dApps
-
-### 🛠️ Specialized Tools Team
-
-**Platform and tool specialists**
-
-- `payment-integration` - Stripe, PayPal, and payment processing
-- `legacy-modernizer` - Refactoring and modernization
-- `game-developer` - Unity, Unreal, and game engines
-- `directus-developer` - Headless CMS expertise
-- `drupal-developer` - Drupal modules and theming
-
----
-
-## 🎬 Real-World Examples
-
-### Example 1: E-Commerce Payment System
-
-```
-You: "Add Stripe checkout to my online store with subscription support"
-
-Tech Lead orchestrates:
-→ Phase 1 - Research & Planning:
-  • Code Archaeologist examines existing order/user models
-  • API Architect reviews current payment flow
-  • Security Auditor identifies PCI compliance requirements
-
-→ Phase 2 - Implementation:
-  • Payment Integration expert implements Stripe SDK
-  • Backend Architect designs webhook handling system
-  • Django Expert creates subscription models and billing logic
-  • React Expert builds secure payment UI components
-
-→ Phase 3 - Quality & Security:
-  • Test Automator creates payment flow test suite
-  • Security Auditor validates PCI compliance
-  • DevOps Engineer sets up webhook monitoring
-
-Result: Secure payment system with subscription management,
-        webhook handling, and full PCI compliance
-```
-
-### Example 2: Mobile App Performance Crisis
-
-```
-You: "Our React Native app is freezing on the product list screen"
-
-Tech Lead orchestrates:
-→ Immediate Response:
-  • Debugger analyzes crash reports and stack traces
-  • Mobile Developer profiles the app performance
-  • Code Archaeologist traces the data flow
-
-→ Root Cause Analysis:
-  • Performance Engineer identifies infinite re-render loop
-  • React Expert finds incorrect useEffect dependencies
-  • Database Optimizer discovers N+1 query problem
-
-→ Solution Implementation:
-  • React Expert fixes component lifecycle issues
-  • Mobile Developer implements FlatList virtualization
-  • Database Optimizer adds proper eager loading
-
-Result: App performance improved by 400%, smooth 60fps scrolling,
-        reduced memory usage by 60%
-```
-
-### Example 3: Legacy System Modernization
-
-```
-You: "Migrate our 10-year-old PHP monolith to microservices"
-
-Tech Lead orchestrates:
-→ Discovery Phase:
-  • Legacy Modernizer analyzes the monolith structure
-  • Code Archaeologist maps all dependencies
-  • Cloud Architect designs target architecture
-
-→ Planning Phase:
-  • Backend Architect creates microservice boundaries
-  • API Architect designs service communication
-  • DevOps Engineer plans zero-downtime migration
-
-→ Execution Phase:
-  • Laravel Expert extracts services incrementally
-  • Database Optimizer splits the monolithic database
-  • Test Automator ensures feature parity
-  • Security Auditor validates service authentication
-
-Result: Successfully migrated to 12 microservices with 99.9% uptime,
-        40% performance improvement, and independent scaling
-```
-
-## 🔄 How It Works: The Three-Phase Approach
-
-### Phase 1: Intelligent Triage
-
-When you submit a request, the framework:
-
-1. **Analyzes complexity** - Simple task or complex mission?
-2. **Identifies requirements** - What expertise is needed?
-3. **Engages specialists** - Activates the right team
-
-### Phase 2: Coordinated Execution
-
-The Tech Lead orchestrator:
-
-- **Research Mode**: Specialists gather information in parallel
-- **Planning Mode**: Creates detailed technical blueprint
-- **Execution Mode**: Agents implement with continuous coordination
-
-### Phase 3: Quality Assurance
-
-Before delivery:
-
-- Code Reviewer validates implementation
-- Security Auditor checks vulnerabilities
-- Test Automator ensures reliability
-- Performance Engineer optimizes bottlenecks
-
----
-
-## 👑 Advanced Usage: The Global Rule Book
-
-Transform Claude Code into a strategic development partner with **`CLAUDE.md.example`** - our battle-tested orchestration framework.
-
-### What It Does:
-
-- **Automatic Triage**: Differentiates simple tasks from complex missions
-- **Smart Delegation**: Routes requests to the right specialists automatically
-- **User Control**: Provides escape hatches for direct interaction
-
-### Set It Up:
+### How to Apply the Example Framework
 
 ```bash
-# Copy the framework to activate intelligent orchestration
-cp CLAUDE.md.example ~/.claude/CLAUDE.md
+# First, backup your existing global rules, if any
+cp ~/.claude/CLAUDE.md ~/.claude/CLAUDE.md.backup
 
-# Now Claude Code will automatically manage your agent team
+# Apply the orchestration framework
+cp CLAUDE.md.example ~/.claude/CLAUDE.md
 ```
 
-### Example in Action:
+Now, Claude will use the rules in the example file to manage the agent team in this project.
+
+### Example in Action
+
+With the framework active, interactions look like this:
+
+**Simple Task:**
 
 ```
 You: "Fix the login bug"
-Claude: "This appears to be a simple task. Engaging the debugger..."
 
-You: "Build a real-time chat system"
-Claude: "This is a complex mission requiring multiple specialists.
-         Engaging the tech-lead-orchestrator to create a plan..."
+Claude: "📋 EXECUTION PLAN
+         ════════════════
+         Classification: Simple
+         Assigned to: @debugger
+         Plan: Analyze login flow, identify bug, implement fix
+         ⚠️ AWAITING APPROVAL"
+
+You: "approved"
+Claude: "🔄 @debugger investigating login issue..."
 ```
+
+**Complex Mission:**
+
+```
+You: "Build a real-time chat system"
+
+Claude: "📋 EXECUTION PLAN
+         ════════════════
+         Classification: Complex Mission
+         Assigned to: @tech-lead-orchestrator
+         ...
+         Agent List:
+         @api-architect, @backend-architect, @react-expert, @security-auditor
+         ⚠️ AWAITING APPROVAL"
+
+You: "proceed"
+Claude: "Executing approved blueprint... 🔄 Step 1/4..."
+```
+
+### Framework Details & Real-World Examples
+
+<details>
+<summary>Click to expand for detailed framework logic and examples</summary>
+
+The framework is designed around a clear command structure and execution flow to ensure efficient and safe operation.
+
+#### 🎯 Model Optimization Strategy
+
+The framework intelligently assigns models based on cognitive demands:
+
+- **Opus Model (Strategic Roles):** Used for complex system design, multi-agent coordination, security analysis, and architectural planning. (13 agents)
+- **Sonnet Model (Implementation Roles):** Used for feature development, framework-specific code, tool integration, and content creation. (34 agents)
+
+This optimization delivers **faster execution** for implementation tasks while maintaining **deep analytical capability** for strategic decisions.
+
+#### 🔄 How It Works: The Enhanced Execution Framework
+
+**Phase 1: Intelligent Triage & Authorization**
+When you submit a request, Claude (acting as gatekeeper):
+
+1.  **Classifies complexity** - Simple task (1-2 files) or complex mission (3+ files).
+2.  **Delegates to specialists** - Routes to the appropriate agent or the `tech-lead-orchestrator`.
+3.  **Presents execution plan** - Shows you exactly what will happen.
+4.  **Waits for approval** - No execution without your explicit "approved" or "proceed".
+
+**Phase 2: Coordinated Execution with Progress Tracking**
+
+- **Critical Protocol:** All agent communication goes through the Task tool, the Tech Lead only creates blueprints (never executes), and Claude manages all execution after your approval.
+
+**Phase 3: Enhanced Quality Assurance**
+
+- Built-in quality gates include model-optimized reviews, parallel execution for independent tasks, and automatic error recovery.
+
+**Phase 4: Smart Agent Authority**
+
+- A clear command structure ensures specialists stay in their lane and the `tech-lead-orchestrator` focuses only on planning.
+
+#### 🎬 Real-World Examples
+
+**Example 1: E-Commerce Payment System**
+
+- **You:** "Add Stripe checkout to my online store with subscription support"
+- **Result:** A secure, PCI-compliant payment system with subscription management, built by a coordinated team of `Code Archaeologist`, `API Architect`, `Security Auditor`, `Payment Integration` expert, `Backend Architect`, `Django Expert`, `React Expert`, and `Test Automator`.
+
+**Example 2: Mobile App Performance Crisis**
+
+- **You:** "Our React Native app is freezing on the product list screen"
+- **Result:** App performance improved by 400% after `Debugger`, `Mobile Developer`, `Performance Engineer`, `React Expert`, and `Database Optimizer` diagnose and fix an infinite re-render loop and N+1 query problem.
+
+**Example 3: Legacy System Modernization**
+
+- **You:** "Migrate our 10-year-old PHP monolith to microservices"
+- **Result:** A successful migration to 12 microservices with 99.9% uptime, orchestrated by the `Tech Lead` and executed by `Legacy Modernizer`, `Code Archaeologist`, `Cloud Architect`, `Backend Architect`, `API Architect`, `DevOps Engineer`, `Laravel Expert`, `Database Optimizer`, `Test Automator`, and `Security Auditor`.
+
+#### 🔧 Troubleshooting
+
+**Problem**: Agents aren't coordinating or the tech-lead is trying to execute code directly.
+**Solution**: Ensure you have applied the orchestration framework from `CLAUDE.md.example` to your global `~/.claude/CLAUDE.md` file.
+
+**Problem**: Conflicts with existing `CLAUDE.md` instructions.
+**Solution**: Carefully merge the key "ORCHESTRATION", "PROTOCOL", and "EXECUTION" sections from our example into your existing rules.
+
+</details>
 
 ---
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----

@@ -1,6 +1,7 @@
 ---
 name: vue-nuxt-expert
 description: Builds server-rendered and static sites with Nuxt.js and Vue, focusing on performance, developer experience, and modern web features.
+model: sonnet
 ---
 
 # Nuxt.js Expert

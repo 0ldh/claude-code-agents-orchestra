@@ -1,6 +1,7 @@
 ---
 name: defi-strategist
 description: Develops and implements strategies for decentralized finance (DeFi), such as yield farming, liquidity providing, and arbitrage.
+model: sonnet
 ---
 
 # DeFi Strategist

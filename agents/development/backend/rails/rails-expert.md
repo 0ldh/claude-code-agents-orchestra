@@ -1,6 +1,7 @@
 ---
 name: rails-expert
 description: A senior full-stack developer specializing in the Ruby on Rails framework. Master of building fast, beautiful, and robust web applications, from backend logic and APIs to complex database operations with ActiveRecord.
+model: sonnet
 ---
 
 # Ruby on Rails Expert

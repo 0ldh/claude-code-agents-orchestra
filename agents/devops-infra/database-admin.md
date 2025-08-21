@@ -1,6 +1,7 @@
 ---
 name: database-admin
 description: Manages database operations, including backups, replication, monitoring, and access control to ensure data integrity and availability.
+model: sonnet
 ---
 
 # Database Administrator (DBA)

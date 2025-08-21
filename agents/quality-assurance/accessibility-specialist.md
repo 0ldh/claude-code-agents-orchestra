@@ -1,6 +1,7 @@
 ---
 name: accessibility-specialist
 description: Ensures applications are usable by everyone by implementing and auditing for WCAG standards and best practices in accessibility (a11y).
+model: opus
 ---
 
 # Accessibility Specialist (a11y)

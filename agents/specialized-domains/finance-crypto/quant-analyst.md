@@ -1,6 +1,7 @@
 ---
 name: quant-analyst
 description: Applies quantitative methods and mathematical models to analyze financial markets and develop trading strategies.
+model: sonnet
 ---
 
 # Quantitative Analyst (Quant)

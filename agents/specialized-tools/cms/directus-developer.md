@@ -1,6 +1,7 @@
 ---
 name: directus-developer
 description: Builds data platforms and backends using the Directus headless CMS, focusing on data modeling, API configuration, and custom extensions.
+model: sonnet
 ---
 
 # Directus Developer

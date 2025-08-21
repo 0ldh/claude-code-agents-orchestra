@@ -1,6 +1,7 @@
 ---
 name: arbitrage-bot
 description: Develops and backtests bots to execute arbitrage strategies in financial markets, such as crypto exchanges or traditional markets.
+model: sonnet
 ---
 
 # Arbitrage Bot Developer

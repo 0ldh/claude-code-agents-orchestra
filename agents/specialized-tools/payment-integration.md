@@ -1,6 +1,7 @@
 ---
 name: payment-integration
 description: Specializes in integrating payment gateways like Stripe and PayPal, ensuring secure, reliable, and seamless payment processing.
+model: sonnet
 ---
 
 # Payment Integration Specialist
