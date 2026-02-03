@@ -21,6 +21,10 @@ from pathlib import Path
 from dataclasses import dataclass
 
 
+# Configuration constants
+MAX_KEYWORDS_PER_AGENT = 5  # Limit keywords per agent for compression
+
+
 @dataclass
 class Agent:
     """Represents an agent with its metadata."""
@@ -201,19 +205,9 @@ def generate_index(agents: list[Agent]) -> str:
     lines.append("")
     lines.append("```")
     
-    # Invert the trigger map: keyword -> agents
-    keyword_to_agents: dict[str, list[str]] = {}
-    for agent_name, keywords in TRIGGER_KEYWORDS.items():
-        for kw in keywords:
-            keyword_to_agents.setdefault(kw, []).append(agent_name)
-    
-    # Group by agent for compact output
-    agent_keywords: dict[str, list[str]] = {}
-    for agent_name, keywords in TRIGGER_KEYWORDS.items():
-        agent_keywords[agent_name] = keywords
-    
-    for agent_name, keywords in sorted(agent_keywords.items()):
-        kw_str = ",".join(keywords[:5])  # Limit to 5 keywords for compression
+    # Generate trigger keywords (sorted by agent name for deterministic output)
+    for agent_name, keywords in sorted(TRIGGER_KEYWORDS.items()):
+        kw_str = ",".join(keywords[:MAX_KEYWORDS_PER_AGENT])
         lines.append(f"|{kw_str} → @{agent_name}")
     
     lines.append("```")
@@ -223,28 +217,39 @@ def generate_index(agents: list[Agent]) -> str:
 
 
 def inject_index(claude_md_path: Path, index: str) -> str:
-    """Inject or replace the Agent Orchestra Index in CLAUDE.md."""
+    """Inject or replace the Agent Orchestra Index in CLAUDE.md.
+    
+    Uses section headers (## ) as boundaries to avoid accidentally
+    deleting other sections when replacing the index.
+    """
     content = claude_md_path.read_text(encoding='utf-8')
     
     # Markers for the index section
     start_marker = "## 🗂️ AGENT ORCHESTRA INDEX"
-    end_marker = "---"
+    # Use the next section header as end marker (safer than generic ---)
+    next_section_pattern = re.compile(r'^## \d+\.', re.MULTILINE)
     
     # Check if index already exists
     if start_marker in content:
         # Find and replace existing index
         start_idx = content.index(start_marker)
-        # Find the next `---` after the index (section separator)
-        end_idx = content.find(end_marker, start_idx + len(start_marker))
-        if end_idx == -1:
-            end_idx = len(content)
         
-        new_content = content[:start_idx] + index + "\n" + content[end_idx:]
+        # Find the next numbered section (e.g., "## 1. TRIAGE PROTOCOL")
+        remaining_content = content[start_idx + len(start_marker):]
+        match = next_section_pattern.search(remaining_content)
+        
+        if match:
+            # Found next section, preserve it
+            end_idx = start_idx + len(start_marker) + match.start()
+            new_content = content[:start_idx] + index + "\n\n---\n\n" + content[end_idx:]
+        else:
+            # No next section found, append to end
+            new_content = content[:start_idx] + index
     else:
         # Insert after the first `---` (after the header section)
-        first_separator = content.find(end_marker)
+        first_separator = content.find("---")
         if first_separator != -1:
-            insert_pos = first_separator + len(end_marker)
+            insert_pos = first_separator + len("---")
             new_content = content[:insert_pos] + "\n\n" + index + "\n" + content[insert_pos:]
         else:
             # Prepend if no separator found
