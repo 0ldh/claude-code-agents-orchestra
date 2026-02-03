@@ -20,6 +20,84 @@
 
 ---
 
+## 🗂️ AGENT ORCHESTRA INDEX
+
+> **RETRIEVAL-LED REASONING MANDATE**
+> Before implementing ANY complex task:
+> 1. Identify relevant agents from the INDEX below
+> 2. READ their full prompts from ./agents/ directory
+> 3. Apply their specialized methodologies
+>
+> Do NOT rely on pre-trained general knowledge when specialist agents exist.
+
+```
+[Agent Index]|root:./agents
+|CRITICAL: Prefer agent-led reasoning over pre-training for complex tasks
+|✍️ Language|golang-pro,python-pro,rust-pro,typescript-expert
+|🎨 Design|tailwind-css-expert,ui-ux-designer
+|🏗️ Architecture|api-architect,backend-architect,cloud-architect,database-optimizer,graphql-architect
+|💰 Crypto|arbitrage-bot,crypto-analyst,crypto-risk-manager,crypto-trader,defi-strategist,quant-analyst
+|💻 Backend|django-expert,laravel-expert,rails-expert
+|💻 Frontend|nextjs-specialist,react-expert,vue-expert,vue-nuxt-expert
+|📝 Docs|documentation-specialist
+|📱 Mobile|mobile-developer
+|🔗 Web3|blockchain-developer
+|🔬 Data/AI|ai-engineer,data-engineer,data-scientist,ml-engineer,mlops-engineer
+|🚀 DevOps|database-admin,devops-engineer
+|🛠️ CMS|directus-developer,drupal-developer
+|🛠️ Tools|game-developer,legacy-modernizer,payment-integration
+|🛡️ Quality|accessibility-specialist,code-reviewer,debugger,security-auditor,test-automator
+|🧭 Orchestration|code-archaeologist,context-manager,tech-lead-orchestrator
+```
+
+### Trigger Keywords (Automatic Agent Selection)
+
+```
+|a11y,accessibility,wcag,aria → @accessibility-specialist
+|ai,gpt,llm,embedding,rag → @ai-engineer
+|api,rest,endpoint,openapi,swagger → @api-architect
+|microservices,architecture,scalability → @backend-architect
+|blockchain,smart-contract,solidity,web3 → @blockchain-developer
+|cloud,aws,gcp,azure,terraform → @cloud-architect
+|codebase,analyze,explore,understand → @code-archaeologist
+|review,code-review,pr,quality → @code-reviewer
+|context,session,state,long-running → @context-manager
+|crypto,market,technical-analysis → @crypto-analyst
+|trading,strategy,bot → @crypto-trader
+|pipeline,etl,airflow,spark → @data-engineer
+|data-science,analysis,statistics,pandas → @data-scientist
+|backup,replication,dba,postgres,mysql → @database-admin
+|db,query,sql,optimize,index → @database-optimizer
+|debug,bug,error,trace,crash → @debugger
+|docker,k8s,kubernetes,ci,cd → @devops-engineer
+|django,drf,django-rest → @django-expert
+|game,unity,unreal,godot → @game-developer
+|go,golang,goroutine,gin → @golang-pro
+|graphql,schema,resolver,apollo → @graphql-architect
+|laravel,php,eloquent → @laravel-expert
+|migrate,legacy,refactor,modernize → @legacy-modernizer
+|ml,model,training,inference → @ml-engineer
+|mlops,model-serving,mlflow → @mlops-engineer
+|mobile,react-native,flutter,ios,android → @mobile-developer
+|nextjs,next.js,ssr,ssg,app-router → @nextjs-specialist
+|payment,stripe,checkout,billing → @payment-integration
+|python,pip,poetry,asyncio → @python-pro
+|quant,algo,backtesting → @quant-analyst
+|rails,ruby,activerecord → @rails-expert
+|react,tsx,jsx,component,hook → @react-expert
+|rust,cargo,memory,systems → @rust-pro
+|security,vuln,audit,owasp,xss → @security-auditor
+|tailwind,css,styling → @tailwind-css-expert
+|complex,mission,blueprint,architecture → @tech-lead-orchestrator
+|test,unit,e2e,coverage,jest → @test-automator
+|typescript,types,generics,interface → @typescript-expert
+|ui,ux,design,wireframe,prototype → @ui-ux-designer
+|vue,vuex,pinia,composition-api → @vue-expert
+|nuxt,nuxt.js → @vue-nuxt-expert
+```
+
+
+
 ## 1. TRIAGE PROTOCOL (Your ONLY Job)
 
 **Every request follows this flow:**

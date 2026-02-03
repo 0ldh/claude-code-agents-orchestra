@@ -212,6 +212,39 @@ All agents are organized into professional teams within the `agents/` directory.
 
 ---
 
+## 📂 Agent Orchestra Index: Passive Context for Better Agent Selection
+
+The `CLAUDE.md.example` includes an **Agent Orchestra Index** — a compressed index of all 47 agents with automatic trigger keywords. This approach is inspired by [Vercel's research](https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals) showing that passive context (always-available information) outperforms on-demand skills for agent selection.
+
+### Why This Matters
+
+| Approach                    | Agent Selection Accuracy |
+| --------------------------- | ------------------------ |
+| On-demand (skills)          | ~53%                     |
+| **Passive context (index)** | **~100%**                |
+
+### How It Works
+
+The index provides:
+
+1. **Team-based grouping**: All 47 agents organized by domain
+2. **Trigger keywords**: Automatic agent matching (e.g., `payment,stripe → @payment-integration`)
+3. **Retrieval-led reasoning**: Instruction to read full agent prompts before implementation
+
+### Keeping the Index Updated
+
+When you add or modify agents, regenerate the index:
+
+```bash
+# Preview changes (no file modification)
+python scripts/sync-agent-index.py --dry-run
+
+# Apply changes to CLAUDE.md.example
+python scripts/sync-agent-index.py
+```
+
+---
+
 ## 👑 Orchestration Example: Using `CLAUDE.md.example`
 
 > **⚠️ Important:** The following sections and the `CLAUDE.md.example` file demonstrate **one possible way** to orchestrate this team of specialist agents. This is a powerful but optional framework. You are encouraged to adapt it, build your own, or integrate these agents into your existing workflow.
