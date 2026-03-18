@@ -212,36 +212,27 @@ All agents are organized into professional teams within the `agents/` directory.
 
 ---
 
-## 📂 Agent Orchestra Index: Passive Context for Better Agent Selection
+## Agent Orchestra Index: Passive Context for Retrieval-Led Selection
 
-The `CLAUDE.md.example` includes an **Agent Orchestra Index** — a compressed index of all 47 agents with automatic trigger keywords. This approach is inspired by [Vercel's research](https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals) showing that passive context (always-available information) outperforms on-demand skills for agent selection.
+The `CLAUDE.md.example` includes an **Agent Orchestra Index** inspired by [Vercel's passive-context guidance](https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals): keep a small, always-available index in the root context, then retrieve the full specialist prompt only when it is relevant.
 
-### Why This Matters
+### Why This Exists
 
-| Approach                    | Agent Selection Accuracy |
-| --------------------------- | ------------------------ |
-| On-demand (skills)          | ~53%                     |
-| **Passive context (index)** | **~100%**                |
+The goal is not to inline every agent prompt into `CLAUDE.md.example`.
 
-### How It Works
+The goal is to keep a compressed directory of:
 
-The index provides:
+1. **Concrete retrieval paths** to the full prompt files under `./agents/...`
+2. **Lightweight routing hints** that help identify candidate specialists
+3. **A retrieval-led workflow**: find the right file, read it, then apply it
 
-1. **Team-based grouping**: All 47 agents organized by domain
-2. **Trigger keywords**: Automatic agent matching (e.g., `payment,stripe → @payment-integration`)
-3. **Retrieval-led reasoning**: Instruction to read full agent prompts before implementation
+This keeps the passive context compact while still making specialist prompts cheap to find and hard to overlook.
 
-### Keeping the Index Updated
+### Maintenance Workflow
 
-When you add or modify agents, regenerate the index:
+The index in `CLAUDE.md.example` is maintained as a static example block.
 
-```bash
-# Preview changes (no file modification)
-python scripts/sync-agent-index.py --dry-run
-
-# Apply changes to CLAUDE.md.example
-python scripts/sync-agent-index.py
-```
+When you add, rename, move, or materially rewrite agent prompts, update that index in the same change so the listed paths and routing hints stay aligned with the current catalog.
 
 ---
 

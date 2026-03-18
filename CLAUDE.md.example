@@ -20,83 +20,138 @@
 
 ---
 
-## 🗂️ AGENT ORCHESTRA INDEX
+## AGENT ORCHESTRA INDEX
 
 > **RETRIEVAL-LED REASONING MANDATE**
-> Before implementing ANY complex task:
-> 1. Identify relevant agents from the INDEX below
-> 2. READ their full prompts from ./agents/ directory
-> 3. Apply their specialized methodologies
->
-> Do NOT rely on pre-trained general knowledge when specialist agents exist.
+> Before implementing any complex task:
+> 1. Match the task against the retrieval map below.
+> 2. Read the full prompt from the exact agent file before planning.
+> 3. Prefer agent-led reasoning over pre-trained general knowledge.
 
+```text
+[TeamIndex]|root:./agents
+|critical|Prefer retrieval from agent prompts over pre-training for complex tasks
+|team:Architecture|agents:api-architect,backend-architect,cloud-architect,database-optimizer,graphql-architect
+|team:Backend|agents:django-expert,laravel-expert,rails-expert
+|team:CMS|agents:directus-developer,drupal-developer
+|team:Crypto|agents:arbitrage-bot,crypto-analyst,crypto-risk-manager,crypto-trader,defi-strategist,quant-analyst
+|team:Data/AI|agents:ai-engineer,data-engineer,data-scientist,ml-engineer,mlops-engineer
+|team:Design|agents:tailwind-css-expert,ui-ux-designer
+|team:DevOps|agents:database-admin,devops-engineer
+|team:Docs|agents:documentation-specialist
+|team:Frontend|agents:nextjs-specialist,react-expert,vue-expert,vue-nuxt-expert
+|team:Language|agents:golang-pro,python-pro,rust-pro,typescript-expert
+|team:Mobile|agents:mobile-developer
+|team:Orchestration|agents:code-archaeologist,context-manager,tech-lead-orchestrator
+|team:Quality|agents:accessibility-specialist,code-reviewer,debugger,security-auditor,test-automator
+|team:Tools|agents:game-developer,legacy-modernizer,payment-integration
+|team:Web3|agents:blockchain-developer
 ```
-[Agent Index]|root:./agents
-|CRITICAL: Prefer agent-led reasoning over pre-training for complex tasks
-|✍️ Language|golang-pro,python-pro,rust-pro,typescript-expert
-|🎨 Design|tailwind-css-expert,ui-ux-designer
-|🏗️ Architecture|api-architect,backend-architect,cloud-architect,database-optimizer,graphql-architect
-|💰 Crypto|arbitrage-bot,crypto-analyst,crypto-risk-manager,crypto-trader,defi-strategist,quant-analyst
-|💻 Backend|django-expert,laravel-expert,rails-expert
-|💻 Frontend|nextjs-specialist,react-expert,vue-expert,vue-nuxt-expert
-|📝 Docs|documentation-specialist
-|📱 Mobile|mobile-developer
-|🔗 Web3|blockchain-developer
-|🔬 Data/AI|ai-engineer,data-engineer,data-scientist,ml-engineer,mlops-engineer
-|🚀 DevOps|database-admin,devops-engineer
-|🛠️ CMS|directus-developer,drupal-developer
-|🛠️ Tools|game-developer,legacy-modernizer,payment-integration
-|🛡️ Quality|accessibility-specialist,code-reviewer,debugger,security-auditor,test-automator
-|🧭 Orchestration|code-archaeologist,context-manager,tech-lead-orchestrator
+
+### Retrieval Map
+
+```text
+[AgentPaths]|root:./agents
+|agent:api-architect|file:architecture/api-architect.md|tags:api,rest,endpoint,openapi,swagger
+|agent:backend-architect|file:architecture/backend-architect.md|tags:microservices,architecture,scalability
+|agent:cloud-architect|file:architecture/cloud-architect.md|tags:cloud,aws,gcp,azure,terraform
+|agent:database-optimizer|file:architecture/database-optimizer.md|tags:db,query,sql,optimize,index
+|agent:graphql-architect|file:architecture/graphql-architect.md|tags:graphql,schema,resolver,apollo
+|agent:django-expert|file:development/backend/django/django-expert.md|tags:django,drf,django-rest
+|agent:laravel-expert|file:development/backend/laravel/laravel-expert.md|tags:laravel,php,eloquent
+|agent:rails-expert|file:development/backend/rails/rails-expert.md|tags:rails,ruby,activerecord
+|agent:directus-developer|file:specialized-tools/cms/directus-developer.md|tags:directus,cms,headless-cms,extensions,data-model
+|agent:drupal-developer|file:specialized-tools/cms/drupal-developer.md|tags:drupal,cms,module,theming,site-building
+|agent:arbitrage-bot|file:specialized-domains/finance-crypto/arbitrage-bot.md|tags:arbitrage,trading-bot,backtesting,crypto,markets
+|agent:crypto-analyst|file:specialized-domains/finance-crypto/crypto-analyst.md|tags:crypto,market,technical-analysis
+|agent:crypto-risk-manager|file:specialized-domains/finance-crypto/crypto-risk-manager.md|tags:crypto,risk,portfolio,defi,volatility
+|agent:crypto-trader|file:specialized-domains/finance-crypto/crypto-trader.md|tags:trading,strategy,bot
+|agent:defi-strategist|file:specialized-domains/finance-crypto/defi-strategist.md|tags:defi,yield-farming,liquidity,arbitrage,protocols
+|agent:quant-analyst|file:specialized-domains/finance-crypto/quant-analyst.md|tags:quant,algo,backtesting
+|agent:ai-engineer|file:specialized-domains/data-ai/ai-engineer.md|tags:ai,gpt,llm,embedding,rag
+|agent:data-engineer|file:specialized-domains/data-ai/data-engineer.md|tags:pipeline,etl,airflow,spark
+|agent:data-scientist|file:specialized-domains/data-ai/data-scientist.md|tags:data-science,analysis,statistics,pandas
+|agent:ml-engineer|file:specialized-domains/data-ai/ml-engineer.md|tags:ml,model,training,inference
+|agent:mlops-engineer|file:specialized-domains/data-ai/mlops-engineer.md|tags:mlops,model-serving,mlflow
+|agent:tailwind-css-expert|file:design/tailwind-css-expert.md|tags:tailwind,css,styling
+|agent:ui-ux-designer|file:design/ui-ux-designer.md|tags:ui,ux,design,wireframe,prototype
+|agent:database-admin|file:devops-infra/database-admin.md|tags:backup,replication,dba,postgres,mysql
+|agent:devops-engineer|file:devops-infra/devops-engineer.md|tags:docker,k8s,kubernetes,ci,cd
+|agent:documentation-specialist|file:content-docs/documentation-specialist.md|tags:documentation,docs,guide,tutorial,api-docs
+|agent:nextjs-specialist|file:development/frontend/react/nextjs-specialist.md|tags:nextjs,next.js,ssr,ssg,app-router
+|agent:react-expert|file:development/frontend/react/react-expert.md|tags:react,tsx,jsx,component,hook
+|agent:vue-expert|file:development/frontend/vue/vue-expert.md|tags:vue,vuex,pinia,composition-api
+|agent:vue-nuxt-expert|file:development/frontend/vue/vue-nuxt-expert.md|tags:nuxt,nuxt.js
+|agent:golang-pro|file:language-experts/golang-pro.md|tags:go,golang,goroutine,gin
+|agent:python-pro|file:language-experts/python-pro.md|tags:python,pip,poetry,asyncio
+|agent:rust-pro|file:language-experts/rust-pro.md|tags:rust,cargo,memory,systems
+|agent:typescript-expert|file:language-experts/typescript-expert.md|tags:typescript,types,generics,interface
+|agent:mobile-developer|file:development/mobile/mobile-developer.md|tags:mobile,react-native,flutter,ios,android
+|agent:code-archaeologist|file:orchestration/code-archaeologist.md|tags:codebase,analyze,explore,understand
+|agent:context-manager|file:orchestration/context-manager.md|tags:context,session,state,long-running
+|agent:tech-lead-orchestrator|file:orchestration/tech-lead-orchestrator.md|tags:complex,mission,blueprint,architecture
+|agent:accessibility-specialist|file:quality-assurance/accessibility-specialist.md|tags:a11y,accessibility,wcag,aria
+|agent:code-reviewer|file:quality-assurance/code-reviewer.md|tags:review,code-review,pr,quality
+|agent:debugger|file:quality-assurance/debugger.md|tags:debug,bug,error,trace,crash
+|agent:security-auditor|file:quality-assurance/security-auditor.md|tags:security,vuln,audit,owasp,xss
+|agent:test-automator|file:quality-assurance/test-automator.md|tags:test,unit,e2e,coverage,jest
+|agent:game-developer|file:specialized-tools/game-developer.md|tags:game,unity,unreal,godot
+|agent:legacy-modernizer|file:specialized-tools/legacy-modernizer.md|tags:migrate,legacy,refactor,modernize
+|agent:payment-integration|file:specialized-tools/payment-integration.md|tags:payment,stripe,checkout,billing
+|agent:blockchain-developer|file:specialized-domains/web3/blockchain-developer.md|tags:blockchain,smart-contract,solidity,web3
 ```
 
 ### Trigger Keywords (Automatic Agent Selection)
 
+```text
+|a11y,accessibility,wcag,aria -> @accessibility-specialist
+|ai,gpt,llm,embedding,rag -> @ai-engineer
+|api,rest,endpoint,openapi,swagger -> @api-architect
+|arbitrage,trading-bot,backtesting,crypto,markets -> @arbitrage-bot
+|microservices,architecture,scalability -> @backend-architect
+|blockchain,smart-contract,solidity,web3 -> @blockchain-developer
+|cloud,aws,gcp,azure,terraform -> @cloud-architect
+|codebase,analyze,explore,understand -> @code-archaeologist
+|review,code-review,pr,quality -> @code-reviewer
+|context,session,state,long-running -> @context-manager
+|crypto,market,technical-analysis -> @crypto-analyst
+|crypto,risk,portfolio,defi,volatility -> @crypto-risk-manager
+|trading,strategy,bot -> @crypto-trader
+|pipeline,etl,airflow,spark -> @data-engineer
+|data-science,analysis,statistics,pandas -> @data-scientist
+|backup,replication,dba,postgres,mysql -> @database-admin
+|db,query,sql,optimize,index -> @database-optimizer
+|debug,bug,error,trace,crash -> @debugger
+|defi,yield-farming,liquidity,arbitrage,protocols -> @defi-strategist
+|docker,k8s,kubernetes,ci,cd -> @devops-engineer
+|directus,cms,headless-cms,extensions,data-model -> @directus-developer
+|django,drf,django-rest -> @django-expert
+|documentation,docs,guide,tutorial,api-docs -> @documentation-specialist
+|drupal,cms,module,theming,site-building -> @drupal-developer
+|game,unity,unreal,godot -> @game-developer
+|go,golang,goroutine,gin -> @golang-pro
+|graphql,schema,resolver,apollo -> @graphql-architect
+|laravel,php,eloquent -> @laravel-expert
+|migrate,legacy,refactor,modernize -> @legacy-modernizer
+|ml,model,training,inference -> @ml-engineer
+|mlops,model-serving,mlflow -> @mlops-engineer
+|mobile,react-native,flutter,ios,android -> @mobile-developer
+|nextjs,next.js,ssr,ssg,app-router -> @nextjs-specialist
+|payment,stripe,checkout,billing -> @payment-integration
+|python,pip,poetry,asyncio -> @python-pro
+|quant,algo,backtesting -> @quant-analyst
+|rails,ruby,activerecord -> @rails-expert
+|react,tsx,jsx,component,hook -> @react-expert
+|rust,cargo,memory,systems -> @rust-pro
+|security,vuln,audit,owasp,xss -> @security-auditor
+|tailwind,css,styling -> @tailwind-css-expert
+|complex,mission,blueprint,architecture -> @tech-lead-orchestrator
+|test,unit,e2e,coverage,jest -> @test-automator
+|typescript,types,generics,interface -> @typescript-expert
+|ui,ux,design,wireframe,prototype -> @ui-ux-designer
+|vue,vuex,pinia,composition-api -> @vue-expert
+|nuxt,nuxt.js -> @vue-nuxt-expert
 ```
-|a11y,accessibility,wcag,aria → @accessibility-specialist
-|ai,gpt,llm,embedding,rag → @ai-engineer
-|api,rest,endpoint,openapi,swagger → @api-architect
-|microservices,architecture,scalability → @backend-architect
-|blockchain,smart-contract,solidity,web3 → @blockchain-developer
-|cloud,aws,gcp,azure,terraform → @cloud-architect
-|codebase,analyze,explore,understand → @code-archaeologist
-|review,code-review,pr,quality → @code-reviewer
-|context,session,state,long-running → @context-manager
-|crypto,market,technical-analysis → @crypto-analyst
-|trading,strategy,bot → @crypto-trader
-|pipeline,etl,airflow,spark → @data-engineer
-|data-science,analysis,statistics,pandas → @data-scientist
-|backup,replication,dba,postgres,mysql → @database-admin
-|db,query,sql,optimize,index → @database-optimizer
-|debug,bug,error,trace,crash → @debugger
-|docker,k8s,kubernetes,ci,cd → @devops-engineer
-|django,drf,django-rest → @django-expert
-|game,unity,unreal,godot → @game-developer
-|go,golang,goroutine,gin → @golang-pro
-|graphql,schema,resolver,apollo → @graphql-architect
-|laravel,php,eloquent → @laravel-expert
-|migrate,legacy,refactor,modernize → @legacy-modernizer
-|ml,model,training,inference → @ml-engineer
-|mlops,model-serving,mlflow → @mlops-engineer
-|mobile,react-native,flutter,ios,android → @mobile-developer
-|nextjs,next.js,ssr,ssg,app-router → @nextjs-specialist
-|payment,stripe,checkout,billing → @payment-integration
-|python,pip,poetry,asyncio → @python-pro
-|quant,algo,backtesting → @quant-analyst
-|rails,ruby,activerecord → @rails-expert
-|react,tsx,jsx,component,hook → @react-expert
-|rust,cargo,memory,systems → @rust-pro
-|security,vuln,audit,owasp,xss → @security-auditor
-|tailwind,css,styling → @tailwind-css-expert
-|complex,mission,blueprint,architecture → @tech-lead-orchestrator
-|test,unit,e2e,coverage,jest → @test-automator
-|typescript,types,generics,interface → @typescript-expert
-|ui,ux,design,wireframe,prototype → @ui-ux-designer
-|vue,vuex,pinia,composition-api → @vue-expert
-|nuxt,nuxt.js → @vue-nuxt-expert
-```
-
-
 
 ## 1. TRIAGE PROTOCOL (Your ONLY Job)
 
