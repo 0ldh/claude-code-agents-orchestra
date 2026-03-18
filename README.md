@@ -212,6 +212,30 @@ All agents are organized into professional teams within the `agents/` directory.
 
 ---
 
+## Agent Orchestra Index: Passive Context for Retrieval-Led Selection
+
+The `CLAUDE.md.example` includes an **Agent Orchestra Index** inspired by [Vercel's passive-context guidance](https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals): keep a small, always-available index in the root context, then retrieve the full specialist prompt only when it is relevant.
+
+### Why This Exists
+
+The goal is not to inline every agent prompt into `CLAUDE.md.example`.
+
+The goal is to keep a compressed directory of:
+
+1. **Concrete retrieval paths** to the full prompt files under `./agents/...`
+2. **Lightweight routing hints** that help identify candidate specialists
+3. **A retrieval-led workflow**: find the right file, read it, then apply it
+
+This keeps the passive context compact while still making specialist prompts cheap to find and hard to overlook.
+
+### Maintenance Workflow
+
+The index in `CLAUDE.md.example` is maintained as a static example block.
+
+When you add, rename, move, or materially rewrite agent prompts, update that index in the same change so the listed paths and routing hints stay aligned with the current catalog.
+
+---
+
 ## 👑 Orchestration Example: Using `CLAUDE.md.example`
 
 > **⚠️ Important:** The following sections and the `CLAUDE.md.example` file demonstrate **one possible way** to orchestrate this team of specialist agents. This is a powerful but optional framework. You are encouraged to adapt it, build your own, or integrate these agents into your existing workflow.
