@@ -1,0 +1,9 @@
+{"type":"system","subtype":"init","session_id":"sample","tools":["Agent","Read","Glob","Grep"]}
+{"type":"assistant","parent_tool_use_id":null,"message":{"content":[{"type":"text","text":"Complex mission identified."},{"type":"tool_use","id":"toolu_1","name":"Agent","input":{"subagent_type":"tech-lead-orchestrator","description":"Blueprint","prompt":"Plan the split"}}]}}
+{"type":"assistant","parent_tool_use_id":"toolu_1","message":{"content":[{"type":"tool_use","id":"toolu_2","name":"Read","input":{"file_path":"agents/development/frontend/react/react-expert.md"}}]}}
+{"type":"assistant","parent_tool_use_id":"toolu_1","message":{"content":[{"type":"tool_use","id":"toolu_3","name":"Task","input":{"subagent_type":"security-auditor","prompt":"should not count"}}]}}
+{"type":"user","parent_tool_use_id":null,"message":{"content":[{"type":"tool_result","tool_use_id":"toolu_1","content":"Blueprint: use react-expert"}]}}
+{"type":"assistant","parent_tool_use_id":null,"message":{"content":[{"type":"tool_use","id":"toolu_4","name":"Task","input":{"subagent_type":"react-expert","prompt":"Review the component"}}]}}
+{"type":"user","parent_tool_use_id":null,"message":{"content":[{"type":"tool_result","tool_use_id":"toolu_4","content":"done"}]}}
+{"type":"assistant","parent_tool_use_id":null,"message":{"content":[{"type":"text","text":"📋 EXECUTION PLAN\nAssigned to: @tech-lead-orchestrator\nAgent List:\n[@react-expert]: split the component\n⚠️ AWAITING APPROVAL"}]}}
+{"type":"result","subtype":"success","is_error":false,"result":"📋 EXECUTION PLAN\nAssigned to: @tech-lead-orchestrator\nAgent List:\n[@react-expert]: split the component\n⚠️ AWAITING APPROVAL","total_cost_usd":0.21,"num_turns":4,"duration_ms":51234}

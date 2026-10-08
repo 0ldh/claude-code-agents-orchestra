@@ -205,6 +205,9 @@ All agents are organized into professional teams within the `agents/` directory.
 │   ├── 🔬 specialized-domains/ # Niche Industry Expertise
 │   └── 🛠️ specialized-tools/    # Specific Platform & Tool Mastery
 │
+├── evals/
+│   └── routing/              # Measures whether the index picks the right agent
+│
 ├── CLAUDE.md.example         # Advanced: Example AI Rule Book
 ├── LICENSE
 └── README.md
@@ -233,6 +236,10 @@ This keeps the passive context compact while still making specialist prompts che
 The index in `CLAUDE.md.example` is maintained as a static example block.
 
 When you add, rename, move, or materially rewrite agent prompts, update that index in the same change so the listed paths and routing hints stay aligned with the current catalog.
+
+### Measuring It
+
+[`evals/routing`](./evals/routing) runs 30 tasks through Claude Code with and without the index and reports how often the expected specialist ends up in the execution plan. Its tests (`npm test` in that folder) also fail when an agent named in `tasks.json` no longer exists, so run them after changing the catalog.
 
 ---
 
