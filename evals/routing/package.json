@@ -1,0 +1,13 @@
+{
+  "name": "orchestra-routing-eval",
+  "private": true,
+  "type": "module",
+  "description": "Measures which specialist the orchestration framework picks for a task, with and without the Agent Orchestra Index.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "eval": "node run.ts",
+    "test": "node --test *.test.ts"
+  }
+}

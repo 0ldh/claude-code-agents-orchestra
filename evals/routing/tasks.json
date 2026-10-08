@@ -1,0 +1,182 @@
+[
+  {
+    "id": "react-split-component",
+    "group": "direct",
+    "prompt": "Split the 600-line ProductPage.tsx React component into smaller components and move its data fetching into a custom hook.",
+    "expected": ["react-expert"]
+  },
+  {
+    "id": "nextjs-app-router",
+    "group": "direct",
+    "prompt": "Move our Next.js pages/ routes to the App Router, keeping the getServerSideProps behavior with server components.",
+    "expected": ["nextjs-specialist"]
+  },
+  {
+    "id": "vue-pinia",
+    "group": "direct",
+    "prompt": "Convert this Vue 2 Options API store module to Pinia with the Composition API.",
+    "expected": ["vue-expert", "vue-nuxt-expert"]
+  },
+  {
+    "id": "django-orders-endpoint",
+    "group": "direct",
+    "prompt": "Add a Django REST Framework endpoint that lists a user's orders with pagination and filtering by status.",
+    "expected": ["django-expert"]
+  },
+  {
+    "id": "go-goroutine-leak",
+    "group": "direct",
+    "prompt": "Our Go service leaks goroutines when HTTP clients disconnect early. Find and fix the leak.",
+    "expected": ["golang-pro", "debugger"]
+  },
+  {
+    "id": "rust-borrow-checker",
+    "group": "direct",
+    "prompt": "Refactor this Rust module to drop the unnecessary clones and fix the borrow checker errors that come back when I remove them.",
+    "expected": ["rust-pro"]
+  },
+  {
+    "id": "python-asyncio-scraper",
+    "group": "direct",
+    "prompt": "Convert our synchronous Python scraper to asyncio with aiohttp and a cap on concurrent requests.",
+    "expected": ["python-pro"]
+  },
+  {
+    "id": "typescript-typed-client",
+    "group": "direct",
+    "prompt": "Make our TypeScript API client fully type-safe: infer each response type from the route map with generics.",
+    "expected": ["typescript-expert"]
+  },
+  {
+    "id": "graphql-comments-schema",
+    "group": "direct",
+    "prompt": "Design a GraphQL schema for comments with cursor pagination, and fix the N+1 problem in the resolvers with DataLoader.",
+    "expected": ["graphql-architect"]
+  },
+  {
+    "id": "rest-invitations-api",
+    "group": "direct",
+    "prompt": "Design the REST endpoints and an OpenAPI spec for a team invitations feature.",
+    "expected": ["api-architect"]
+  },
+  {
+    "id": "k8s-deploy-pipeline",
+    "group": "direct",
+    "prompt": "Write a container build and a GitHub Actions workflow that deploys the app to our Kubernetes cluster.",
+    "expected": ["devops-engineer"]
+  },
+  {
+    "id": "terraform-aws-stack",
+    "group": "direct",
+    "prompt": "Write Terraform for our AWS setup: a VPC, an ECS service behind a load balancer, and an RDS Postgres instance.",
+    "expected": ["cloud-architect", "devops-engineer"]
+  },
+  {
+    "id": "stripe-subscriptions",
+    "group": "direct",
+    "prompt": "Integrate Stripe Checkout for monthly subscriptions and handle the webhook for failed renewals.",
+    "expected": ["payment-integration"]
+  },
+  {
+    "id": "tailwind-settings-page",
+    "group": "direct",
+    "prompt": "Restyle the settings page with Tailwind so it works on phones and supports dark mode.",
+    "expected": ["tailwind-css-expert"]
+  },
+  {
+    "id": "solidity-capped-token",
+    "group": "direct",
+    "prompt": "Write a Solidity ERC-20 contract with a capped supply and a timelocked mint function.",
+    "expected": ["blockchain-developer"]
+  },
+  {
+    "id": "rag-support-bot",
+    "group": "direct",
+    "prompt": "Build a RAG pipeline over our help center articles for a support chatbot: chunking, embeddings, and retrieval.",
+    "expected": ["ai-engineer"]
+  },
+  {
+    "id": "playwright-auth-e2e",
+    "group": "direct",
+    "prompt": "Add Playwright e2e tests for the signup and login flows.",
+    "expected": ["test-automator"]
+  },
+  {
+    "id": "react-native-offline",
+    "group": "direct",
+    "prompt": "Build a screen for our iOS and Android app that keeps working offline and syncs when the connection comes back.",
+    "expected": ["mobile-developer"]
+  },
+  {
+    "id": "screen-reader-tabs",
+    "group": "indirect",
+    "prompt": "Screen reader users say they can't tell which tab is selected on our dashboard, and keyboard users get stuck inside the date picker.",
+    "expected": ["accessibility-specialist"]
+  },
+  {
+    "id": "password-reset-takeover",
+    "group": "indirect",
+    "prompt": "Someone reset another user's password by changing the user id in the reset link. Find out how and close the hole.",
+    "expected": ["security-auditor"]
+  },
+  {
+    "id": "slow-orders-report",
+    "group": "indirect",
+    "prompt": "The orders report page takes 40 seconds to load. Almost all of that is spent waiting on the database while it joins orders, customers and line items.",
+    "expected": ["database-optimizer"]
+  },
+  {
+    "id": "heap-out-of-memory",
+    "group": "indirect",
+    "prompt": "Production goes down every few hours with 'JavaScript heap out of memory' and we can't reproduce it locally.",
+    "expected": ["debugger"]
+  },
+  {
+    "id": "jquery-php-admin",
+    "group": "indirect",
+    "prompt": "We have a 2012 jQuery and PHP admin panel nobody wants to touch. Plan how to move it to a current stack without pausing feature work.",
+    "expected": ["legacy-modernizer"]
+  },
+  {
+    "id": "onboarding-drop-off",
+    "group": "indirect",
+    "prompt": "Most users abandon our onboarding at step 3 of 5. Rework the flow so more of them finish it.",
+    "expected": ["ui-ux-designer"]
+  },
+  {
+    "id": "pre-merge-pushback",
+    "group": "indirect",
+    "prompt": "Before I merge this branch, go over the changes and tell me what you would push back on.",
+    "expected": ["code-reviewer"]
+  },
+  {
+    "id": "three-down-days",
+    "group": "indirect",
+    "prompt": "Check whether buying the S&P 500 after three down days in a row would have beaten buy-and-hold over the last 20 years.",
+    "expected": ["quant-analyst"]
+  },
+  {
+    "id": "ko-login-form-hooks",
+    "group": "ko",
+    "prompt": "로그인 폼 컴포넌트를 리액트 훅으로 리팩터링하고, 입력값 검증 로직은 커스텀 훅으로 분리해줘.",
+    "expected": ["react-expert"]
+  },
+  {
+    "id": "ko-modal-focus",
+    "group": "ko",
+    "prompt": "스크린 리더 사용자가 모달이 열린 걸 알아차리지 못하고, 탭 키를 누르면 포커스가 모달 밖으로 빠져나가.",
+    "expected": ["accessibility-specialist"]
+  },
+  {
+    "id": "ko-payment-unit-tests",
+    "group": "ko",
+    "prompt": "결제 모듈에 단위 테스트를 추가해서 커버리지를 80% 이상으로 올려줘.",
+    "expected": ["test-automator"]
+  },
+  {
+    "id": "ko-slow-order-list",
+    "group": "ko",
+    "prompt": "주문 목록 API가 너무 느려. 쿼리랑 인덱스를 점검해줘.",
+    "expected": ["database-optimizer"]
+  }
+]
